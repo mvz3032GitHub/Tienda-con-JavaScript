@@ -1,0 +1,252 @@
+/* Estilos generales para todos los archivos HTML */
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, li, span, fieldset {
+    color: #2e0f06;
+    font-family: 'Roboto', sans-serif;
+}
+
+.parrafo_index, address {
+    font-size: 18px;
+    text-align: justify;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#header_arriba {
+    position: relative;
+    background-color: #c06d29;
+}
+
+#logo {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    border-radius: 50%;
+    border: 2px solid #2e0f06;
+}
+
+#titulo_subtitulo {
+    top: 5px;
+    width: 35%;
+    position: absolute;
+    display: inline-block;
+}
+
+#fecha_hora {
+    top: 5px;
+    right: 5px;
+    font-size: 20px;
+    position: absolute;
+}
+
+nav {
+    width: 50%;
+    margin: 0 auto;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+
+nav li {
+    margin-right: 20px;
+    display: inline;
+}
+
+nav a {
+    color: #af563b;
+    font-size: 1.3em;
+    padding: 3px 15px;
+    text-decoration: none;
+    background-color: #2e0f06;
+}
+
+nav a:hover {
+    color: #ffffff;
+    background-color: #8a270e;
+}
+
+section {
+    width: 80%;
+    margin: 70px auto;
+}
+
+hr {
+    width: 80%;
+    height: 5px;
+    border: 1px solid #2e0f06;
+    background-color: #a74527;
+}
+
+footer {
+    width: 80%;
+    margin: 20px auto;
+}
+
+address, #redes_sociales {
+    width: 49%;
+    text-align: right;
+    display: inline-block;
+}
+
+.fab {
+    margin: 5px;
+    padding: 5px;
+    font-size: 1.5em;
+    color: #525252;
+    border: 1px solid;
+    box-sizing: unset;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fab:hover {
+    opacity: .7;
+}
+
+/* Estilos para el archivo INDEX */
+#madera-1 {
+    float: left;
+    margin-right: 2rem;
+    border-radius: 10px;
+    margin-bottom: 6rem;
+    box-shadow: 3px 3px 10px #525252;
+}
+
+/* Estilos para el archivo CATALOGO */
+#catalogo {
+    margin: 0 auto;
+    padding: 0 1em;
+    max-width: 60%;
+    display: flexbox;
+    justify-content: center;
+}
+
+#h3 {
+    margin-left: 15px;
+}
+
+.img_cat {
+    width: 150px;
+    height: auto;
+    display: block;
+    border-bottom: 1px solid lightgray;
+}
+
+.detalles {
+    margin: 15px;
+    padding: 5px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.fondo {
+    border: 1px dashed #2e0f06;
+    background: #ffc89a;
+}
+
+/* Estilos para el archivo PRODUCTO */
+fieldset {
+    margin: 0 auto;
+    max-width: 400px;
+    border: 1px solid;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px #525252;
+}
+
+legend {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.parrafo_formulario {
+    text-align: center;
+}
+
+input[type=text], input[type=number] {
+    padding: 12px 20px;
+    border-radius: 5px;
+    border: 1px solid #c06d29;
+}
+
+input:focus {
+    background-color: #ffc89a;
+}
+
+.parrafo_formulario a {
+    text-decoration: none;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+input[type=submit],
+input[type=button],
+.parrafo_formulario a {
+    width: 25%;
+    border: none;
+    color: #a74527;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #2e0f06;
+}
+
+input[type=submit]:hover,
+input[type=button]:hover,
+#boton-vaciar:hover,
+.boton-carrito:hover,
+.parrafo_formulario a:hover {
+    color: #ffffff;
+    background-color: #8a270e;
+}
+
+/* Estilos para el archivo PEDIDO */
+#cat-carrito {
+    margin: 0 auto;
+    padding: 0 1em;
+    max-width: 80%;
+}
+
+#productos {
+    margin: 0 auto;
+    display: flexbox;
+    justify-content: stretch;
+}
+
+.display-block {
+    display: block;
+}
+
+.boton-carrito, #boton-vaciar {
+    width: 50px;
+    margin: 3px;
+    padding: 5px;
+    border: none;
+    color: #a74527;
+    border-radius: 5px;
+    background-color: #2e0f06;
+}
+
+#carrito {
+    font-size: .8em;
+    text-align: right;
+    list-style-type: none;
+}
+
+aside {
+    width: 350px;
+}
+
+#titulo-carrito {
+    text-align: center;
+}
+
+#parr-total {
+    color: #2e0f06;
+    text-align: right;
+    font-family: 'Roboto', sans-serif;
+}

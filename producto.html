@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carpintería El Cedro</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="image" href="img/hexagono-letra-m.jpg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed&display=swap">
+    <script src="https://kit.fontawesome.com/ad90be2af2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div id="header_arriba">
+            <img id="logo" src="img/logo-de-madera.jpg" alt="Logo de la Carpintería el Cedro">
+            <div id="titulo_subtitulo">
+                <h1>Carpintería El Cedro</h1>
+                <h2>Artesanías decorativas para tu hogar</h2>
+            </div>
+            <span id="fecha_hora"></span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="producto.html">Agrega producto</a></li>
+                <li><a href="pedido.html">Comprar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="mostrarFormulario">
+        <form action="producto.html" method="post">
+            <fieldset>
+                <legend>Agregar producto</legend>
+                <p class="parrafo_formulario">
+                    <label for="producto">Nombre del producto: </label><br>
+                    <input type="text" name="producto" id="producto" required maxlength="50" autocomplete="off" autofocus>
+                </p>
+                <p class="parrafo_formulario">
+                    <label for="precio">Precio: </label><br>
+                    <input type="number" name="precio" id="precio" required>
+                </p>
+                <p class="parrafo_formulario">
+                    <input type="button" value="Agregar" onclick="datosEnviados();">
+                </p>
+            </fieldset>
+        </form>
+    </section>
+    <hr>
+    <footer>
+        <address>Calle de los Cedros #234, Col. Arboledas, Nogales, Sonora</address>
+        <div id="redes_sociales">
+            <a href="#" class="fab fa-facebook-f fa-fw"></a>
+            <a href="#" class="fab fa-whatsapp fa-fw"></a>
+            <a href="#" class="fab fa-youtube fa-fw"></a>
+        </div>
+    </footer>
+    <script>
+        var arrayPrecios = [];
+        var arrayProductos = [];
+
+        function datosEnviados() {
+            var precio = document.getElementById("precio").value;
+            var producto = document.getElementById("producto").value;
+            arrayPrecios.push(parseInt(precio));
+            arrayProductos.push(producto);
+            console.log(arrayPrecios, arrayProductos);
+            window.alert(producto + " y $" + precio + ".00 \nfueron enviados al servidor.");
+        }
+    </script>
+</body>
+</html>
